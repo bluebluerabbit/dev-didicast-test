@@ -1,0 +1,73 @@
+.userMain-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 97vw;
+    margin-bottom: 20px;
+}
+
+.userMain-nav-left {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.userMain-nav-right {
+    padding-left: 30px;
+    padding-top: 20px;
+}
+
+.userMain-didicast-image {
+    height: 35px;
+}
+
+.userMain-profile-image {
+    height: 35px;
+}
+
+.userMain-santa-div {
+    margin: 20px;
+    width: 90vw;
+    height: 100px;
+    background-color: #16334F;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.userMain-class-container {
+    margin: 0 auto;
+    width: 90vw;
+}
+
+.userMain-santa-image {
+    height: 50px;
+}
+
+.userMain-register-carousel {
+    height: 200px;
+    /* background-color: pink; */
+}
+
+.userMain-register-carousel-item {
+    width: 200px; 
+    display: inline-block; 
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+.userMain-register-carousel-item > :nth-child(1) {
+    margin-left: 50px;
+}
+
+.userMain-register-carousel-item > :nth-last-child() {
+    /* margin-right: 200px; */
+}
+.userMain-footer {
+    background-color: #657081;
+    color: white;
+
+    padding: 40px;
+}

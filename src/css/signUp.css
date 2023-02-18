@@ -1,0 +1,46 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.signUp-didicast-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+}
+
+.signUp-title {
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.signUp-container {
+    margin-top: 50%;
+}
+
+.signUp-input {
+    border: 1px solid #D9D9D9;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top:20px;
+    width: 280px;
+}
+
+.signUp-button {
+    background-color: #05aed5;
+    color: white;
+    
+    border: 0px;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    width: 320px;
+    
+    font-size: 16px;
+    font-weight: 900;
+}
