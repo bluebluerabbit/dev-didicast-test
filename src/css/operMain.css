@@ -62,11 +62,13 @@
 }
 
 .operMain-class-list-item {
-    width: 300px; 
+    width: 320px; 
     display: inline-block;
     margin: 0 auto; 
     padding: 10px;
     padding-top: 0px;
+    margin: 5px;
+    box-sizing: border-box;
 }
 
 .operMain-class-list-create {

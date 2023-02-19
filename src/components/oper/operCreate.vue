@@ -132,19 +132,18 @@
                     <div class="row">
                         <!-- 동영상 -->
                         <div :class="{
-                        'col-2': true,
-                        'operCreate-select-video-kind': LectureType == 'live',
-                        'operCreate-select-video-kind-selected': LectureType == 'video',
+                            'col-2': true,
+                            'operCreate-select-video-kind': LectureType == 'live',
+                            'operCreate-select-video-kind-selected': LectureType == 'video',
                         }" style="border-right: None;" @click="LectureType = 'video'">
                             동영상
                         </div>
 
                         <!-- 라이브 -->
                         <div :class="{
-                        'col-2': true,
-                        'operCreate-select-video-kind': LectureType == 'video','operCreate-select-video-kind-selected': LectureType == 'live',
-                        }"
-                        @click="LectureType = 'live'">
+                            'col-2': true,
+                            'operCreate-select-video-kind': LectureType == 'video', 'operCreate-select-video-kind-selected': LectureType == 'live',
+                        }" @click="LectureType = 'live'">
                             라이브
                         </div>
                     </div>
@@ -166,17 +165,21 @@
                             </div>
 
                             <div v-else class="row m-5">
-                                <el-date-picker 
-      
-       type="date" 
-       placeholder="시작일" 
-       value-format="yyyyMMdd"
-></el-date-picker>
+                                <el-date-picker type="date" placeholder="시작일" value-format="yyyyMMdd"></el-date-picker>
                             </div>
 
 
                         </div>
 
+                    </div>
+
+                    <!-- 강의 가격 설정 -->
+                    <div>
+                        <table>
+                            <tr>
+                                
+                            </tr>
+                        </table>
                     </div>
 
                 </div>

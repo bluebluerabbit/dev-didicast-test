@@ -26,67 +26,50 @@
         <!-- nav 밑 tap -->
         <hr />
         <div class="operMain-tap-container">
-            <span class="operMain-tap-item"
-            style="color: #4DAED3;">
+            <span class="operMain-tap-item">
                 강의
             </span>
-            <span class="operMain-tap-item">
+            <span class="operMain-tap-item" style="color: #4DAED3;">
                 영상 클라우드
             </span>
         </div>
         <hr /><br />
 
+        <!-- 영상 업로드 -->
+        <div class="operCloud-button-container">
+            <button class="operCloud-button">
+                + 영상 업로드
+            </button>
 
-        <div class="operMain-class-container">
-            <div class="operMain-class-list">
-                <span v-for="i in 16" :key="i" class="operMain-class-list-item">
-                    <!-- 강의 만들기 -->
-                    <div v-if="i == 1">
-                        <div class="operMain-class-list-create">
-                            <div>
-                                + &nbsp;
-                            </div>
-                            <div>
-                                강의 만들기
-                            </div>
-                        </div>
-                        <br/>
-                        <br/>
-                    </div>
-
-                    <!-- 강의 목록 -->
-                    <div v-else>
-                        <div class="operMain-class-list-video">
-                        </div>
-                        <div class="operMain-class-list-info">
-                            <!-- 강의 번호 -->
-                            <div class="operMain-class-list-video-info-number">
-                                {{ i - 1 }}
-                            </div>
-                            <!-- 강의 제목 및 수강 버튼 -->
-                            <div>
-                                <div class="operMain-class-list-video-info-title">
-                                    데이터베이스 프로그래밍 및 분석 강의ddddddd
-                                </div>
-                                <div class="operMain-class-list-video-info-bottom">
-                                    <span class="operMain-video-kind">
-                                        동영상
-                                    </span>
-                                    <button class="operMain-class-list-video-button">
-                                        무료
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- 강의 태그 -->
-                        <span v-for="i in 3" :key="i" class="operMain-video-tag">
-                            데이터분석
-                        </span>
-                    </div>
-                </span>
-            </div>
+            <button class="operCloud-button">
+                아카이브 영상 편집
+            </button>
         </div>
 
+        <!-- 아카이브 테이블 -->
+        <div class="container operCloud-main">
+            <table class="table table-bordered operCloud-table">
+                <th class="operCloud-table-header">
+                    영상 제목
+                </th>
+                <th class="operCloud-table-header">
+                    영상 용량
+                </th>
+                <th class="operCloud-table-header">
+                    재생
+                </th>
+                <tr v-for="i in 10" :key="i"
+                class="operCloud-table-row  align-middle">
+                    <td>
+                        <div class="radio red">
+                            <input type="radio" name="group1" :id="'radio' + i" />
+                            <label :for="'radio' + i">아카이브 {{ i }}</label>
+                        </div>
+                    </td>
+
+                </tr>
+            </table>
+        </div>
 
         <!-- Footer -->
         <div class="operMain-footer">
@@ -101,7 +84,7 @@
                 [HQ] 부산광역시 해운대구 센텀중앙로 97, 센텀스카이비즈 A-704
             </div>
         </div>
-</div>
+    </div>
 </template>
   
 <script>
@@ -114,5 +97,8 @@ export default {
 }
 </script>
   
-<style>@import "@/css/operMain.css";</style>
+<style>
+@import "@/css/operMain.css";
+@import "@/css/operCloud.css";
+</style>
   
