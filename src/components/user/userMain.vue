@@ -22,7 +22,9 @@
             </div>
 
             <!-- 등록 강의 -->
-            <h3>등록 강의</h3>
+            <div class="userMain-register-title">
+                등록 강의
+            </div>
 
             <Carousel :breakpoints="breakpoints" :settings="settings"
             :wrap-around="true"
@@ -30,16 +32,33 @@
                 <!-- 캐러셀 -->
                 <Slide v-for="i in 10" :key="i"
                 class="userMain-register-carousel-item">
-                    <div style="width: 200px; height: 120px; background-color: #d9d9d9;">
+                    <div class="userMain-register-carousel-video">
                     </div>
-                    <div>
+                    <div class="userMain-register-video-info">
                         <!-- 강의 번호 -->
-
+                        <div class="userMain-register-video-info-number">
+                            {{ i }}
+                        </div>
                         <!-- 강의 제목 및 수강 버튼 -->
-                        <div style="width: 200px; margin-left: 50px;">영상 {{ i }}</div>
+                        <div>
+                            <div class="userMain-register-video-info-title">
+                                데이터베이스 프로그래밍 및 분석 강의ddddddd
+                            </div>
+                            <div class="userMain-video-info-bottom">
+                                <span class="userMain-video-kind">
+                                    동영상
+                                </span>
+                                <button class="userMain-video-button">
+                                    수강하기
+                                </button>
+                            </div>
+                        </div>
                     </div>
                     <!-- 강의 태그 -->
-
+                    <span v-for="i in 3" :key="i"
+                    class="userMain-video-tag">
+                        데이터분석
+                    </span>
                 </Slide>
 
                 <template #addons>
@@ -96,13 +115,13 @@ export default {
     // any settings not specified will fallback to the carousel settings
     breakpoints: {
       // 700px and up
-      700: {
-        itemsToShow: 4.5,
+      786: {
+        itemsToShow: 3,
         snapAlign: 'center',
       },
       // 1024 and up
       1024: {
-        itemsToShow: 6,
+        itemsToShow: 5,
         snapAlign: 'start',
       },
     },
