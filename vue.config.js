@@ -24,6 +24,10 @@ module.exports = defineConfig({
           '^/api': ''
         }
       }
+    },
+    headers: {
+      'Cross-Origin-Embedder-Policy': 'require-corp',
+      'Cross-Origin-Opener-Policy': 'same-origin',
     }
   },
   outputDir: './backend/public',  // 배포 파일의 위치를 지정
